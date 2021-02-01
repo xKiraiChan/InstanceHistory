@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalRelease|AnyCPU'">
-    <OutputPath>bin\LocalRelease\</OutputPath>
+    <OutputPath>LocalBuild\</OutputPath>
     <DefineConstants>TRACE;LOCAL</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
