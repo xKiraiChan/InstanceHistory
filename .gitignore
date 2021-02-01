@@ -1,6 +1,7 @@
 Build
 DebugBuild
 BetaBuild
+LocalBuild
 bin
 obj
 .vs
