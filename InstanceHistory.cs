@@ -7,7 +7,7 @@ using System.Linq;
 using VRC.SDKBase;
 using UIExpansionKit.API;
 
-[assembly: MelonInfo(typeof(KiraiMod.InstanceHistory), "InstanceHistory", null, "Kirai Chan#8315", "github.com/xKiraiChan/InstanceHistory")]
+[assembly: MelonInfo(typeof(KiraiMod.InstanceHistory), "InstanceHistory", "1", "Kirai Chan#8315", "github.com/xKiraiChan/InstanceHistory")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 namespace KiraiMod
@@ -58,7 +58,8 @@ namespace KiraiMod
             KiraiLib.Callbacks.OnUIReload += () => Draw();
         }
 
-        public override void OnLevelWasLoaded(int level)
+
+        public override void OnSceneWasLoaded(int level, string sceneName)
         {
             if (level == -1)
             {
@@ -96,7 +97,7 @@ namespace KiraiMod
             history.Insert(0, wrld);
             history = history.Distinct().ToList();
 
-            while (history.Count > 15)
+            while (history.Count > 12)
                 history.RemoveAt(0);
 
             string serialized = "";
