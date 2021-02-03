@@ -1,6 +1,6 @@
 # InstanceHistory
 
-Keep track of the past 15 instances you were in.
+Keep track of the past 12 instances you were in.
 
 [UIExpansionKit](https://github.com/knah/VRCMods]) is a required dependency
 
