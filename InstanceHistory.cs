@@ -98,7 +98,7 @@ namespace KiraiMod
             history = history.Distinct().ToList();
 
             while (history.Count > 12)
-                history.RemoveAt(0);
+                history.RemoveAt(11);
 
             string serialized = "";
             for (int i = 0; i < history.Count(); i++)
